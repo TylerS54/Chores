@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chore Dice - Random Chore Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 Chore Dice</h1>
+            <p>Add your chores and let the dice decide!</p>
+        </header>
+
+        <main>
+            <section class="add-chore-section">
+                <div class="input-group">
+                    <input type="text" id="choreInput" placeholder="Enter a chore..." maxlength="100">
+                    <button id="addChoreBtn">Add Chore</button>
+                </div>
+            </section>
+
+            <section class="dice-section">
+                <div id="diceInfo" class="dice-info"></div>
+                <div id="diceContainer" class="dice-container"></div>
+                <button id="rollDiceBtn" class="roll-btn" disabled>Roll the Dice!</button>
+                <div id="selectedChore" class="selected-chore"></div>
+            </section>
+
+            <section class="chores-section">
+                <h2>Available Chores</h2>
+                <ul id="choresList" class="chores-list"></ul>
+                
+                <h2>Completed Chores</h2>
+                <ul id="completedChoresList" class="completed-chores-list"></ul>
+                
+                <button id="clearAllBtn" class="clear-btn">Clear All Chores</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
